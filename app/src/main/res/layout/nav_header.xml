@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/gradient_list"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/img" />
+
+    <TextView
+        android:id="@+id/epost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="augustatakimi@gmail.com"
+        android:textColor="@color/black"
+        android:layout_marginStart="12dp"
+
+        android:textSize="16dp"
+
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Seviye : Toy"
+        android:textColor="@color/black"
+
+        android:textSize="14dp">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#BDB8B8">
+
+    </View>
+</LinearLayout>

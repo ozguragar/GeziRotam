@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MapsActivity"
+    android:id="@+id/drawerlayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background = "@drawable/gradient_list"
+        android:id="@+id/linearlayoutt"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text"
+            android:hint="Lokasyon Giriniz."
+            android:padding="16dp"
+            android:layout_marginTop="3dp"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_baseline_location"
+            android:gravity="center_horizontal"
+            android:background="@drawable/btn">
+        </EditText>
+
+        <fragment
+            android:id="@+id/fragment_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:layout_weight="2"
+            tools:context=".view.MapsActivity"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mutlaka"
+                android:layout_width="195dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableLeft="@drawable/yildizlll"
+                android:text="Mutlaka Gidilmeli"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/kultur"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableRight="@drawable/monument"
+                android:text="Kültür Modu"
+                android:textColor="@color/black" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/gastronomi"
+                android:layout_width="195dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableLeft="@drawable/ic_local_dining_black_24dp"
+                android:text="Gastronomi Modu"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/eglence"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableRight="@drawable/ic_local_bar_black_24dp"
+                android:text="Eğlence Modu"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/konak"
+                android:layout_width="195dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableLeft="@drawable/ic_hotel_black_24dp"
+                android:text="Konaklama Modu"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/acill"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mp"
+                android:drawableRight="@drawable/sirenlll"
+                android:text="Aciliyet Modu"
+                android:textColor="@color/black"/>
+        </TableRow>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+
+        app:menu="@menu/menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
